@@ -19,6 +19,7 @@ app.use(session
 );
 
 app.set('view engine', 'ejs');
+app.use('/public',express.static('public'));
 
 let tareas = ['uno', 'dos'];
 app.get('/', function (request, response) {
